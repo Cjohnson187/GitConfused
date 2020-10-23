@@ -5,8 +5,10 @@ import argparse
 # ****************************************************************************************
 
 if '__main__' == __name__:                  #pragma: no cover
-
-    file_name = ("jvpm/javafiles/" + str(sys.argv[1]) + ".class")
+    
+    #Temporarily removing thisline below to show we are running java class files in the command line
+    #file_name = ("jvpm/javafiles/" + str(sys.argv[1]) + ".class")
+    file_name = ("jvpm/javafiles/" + str(sys.argv[1]))
     header_class_object = packages.jvpm_opcodes.HeaderClass(name = file_name)
     header_class_object.get_magic()
     header_class_object.get_minor()
